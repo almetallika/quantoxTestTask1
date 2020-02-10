@@ -19,7 +19,6 @@ class Route
         $controller = ucfirst($routing[0]);
         $action = "index";
         $parameters = ($routing[1]) ?: "";
-//        echo "Controller: ".$controller."  Action: ".$action."   Parameters:".$parameters;
         $controller::$action($parameters);
     }
 }
